@@ -12,6 +12,7 @@ root.render(
     </body>
     <p class="source-code">
       <a href="https://github.com/bbeltran22/weather-react">Open Source Code</a>
+      <br />
       By Breanna Beltran
     </p>
   </React.StrictMode>
