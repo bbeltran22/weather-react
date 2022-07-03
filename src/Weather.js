@@ -1,25 +1,44 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import "./Weather.css";
+
 export default function Search() {
   const [weather, Info] = useState("");
   const [city, setCity] = useState("");
 
   function showInfo(response) {
     return Info(
-      <ul className="Data">
-        <li> Temperature: {Math.round(response.data.main.temp)}°F</li>
-        <li> Description: {response.data.weather[0].description}</li>
-        <li> Humidity: {response.data.main.humidity}%</li>
-        <li> Wind: {Math.round(response.data.wind.speed)}mph</li>
-        <li>
-          {" "}
-          <img
-            src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
-            alt={response.data.weather.description}
-          />
-        </li>
-      </ul>
+      <div className="Data">
+        <h1>{city}</h1>
+        <img
+          src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
+          alt={response.data.weather.description}
+        />
+
+        <div className="description">
+          {response.data.weather[0].description}
+        </div>
+
+        <h3>
+          <strong className="Temperature">
+            {Math.round(response.data.main.temp)}°F
+          </strong>
+        </h3>
+        <br />
+        <div className="row">
+          <div className="col-3">
+            HIGH: {Math.round(response.data.main.temp_max)}°F{" "}
+          </div>
+          <div className="col-3">
+            LOW: {Math.round(response.data.main.temp_min)}°F
+          </div>
+          <div className="col-3">
+            FEELS LIKE: {Math.round(response.data.main.feels_like)}°F
+          </div>
+          <div className="col-3">HUMIDITY: {response.data.main.humidity}%</div>
+        </div>
+      </div>
     );
   }
 
