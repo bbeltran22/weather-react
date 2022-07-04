@@ -10,13 +10,13 @@ export default function Search() {
   function showInfo(response) {
     return Info(
       <div className="Data">
-        <h1>{city}</h1>
+        <h1 className="text-capitalize">{city}</h1>
         <img
           src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
           alt={response.data.weather.description}
         />
 
-        <div className="description">
+        <div className="description text-capitalize">
           {response.data.weather[0].description}
         </div>
 
