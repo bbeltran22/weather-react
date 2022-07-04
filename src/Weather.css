@@ -1,7 +1,16 @@
+.city {
+  color: #334a52;
+}
+
 .description {
   text-transform: capitalize;
   color: #96afb8;
 }
+
+.temperature {
+  color: #334a52;
+}
+
 .col-3 {
   color: #96afb8;
 }

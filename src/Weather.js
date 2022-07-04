@@ -21,7 +21,7 @@ export default function Search() {
         </div>
 
         <h3>
-          <strong className="Temperature">
+          <strong className="temperature">
             {Math.round(response.data.main.temp)}°F
           </strong>
         </h3>
