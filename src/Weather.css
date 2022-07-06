@@ -13,3 +13,13 @@ li {
 .Weather {
   font-family: "Bebas Neue", cursive;
 }
+
+.temperature {
+  font-size: 34px;
+  color: #50717b;
+}
+
+.stat {
+  color: #3a4042;
+  font-size: large;
+}
