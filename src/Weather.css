@@ -11,12 +11,17 @@ li {
   font-size: large;
 }
 
+img {
+  height: 53px;
+}
+
 .Weather {
   font-family: "Bebas Neue", cursive;
 }
 
 .temperature {
-  font-size: 34px;
+  font-size: 51px;
+  line-height: 51px;
   color: #50717b;
 }
 

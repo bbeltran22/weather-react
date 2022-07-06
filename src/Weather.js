@@ -28,6 +28,7 @@ export default function Weather() {
                 type="search"
                 placeholder="Enter a city"
                 className="form-control"
+                autoFocus="on"
               />
             </div>
             <div className="col-3 mt-3">
@@ -46,9 +47,18 @@ export default function Weather() {
         </ul>
         <div className="row">
           <div className="col-6">
-            <img src={data.iconUrl} alt={data.description} />
-            <span className="temperature">{Math.round(data.temperature)}</span>
-            <span className="unit">°F</span>
+            <div className="clearfix">
+              <img
+                src={data.iconUrl}
+                alt={data.description}
+                className="float-left"
+              />
+
+              <span className="temperature">
+                {Math.round(data.temperature)}
+              </span>
+              <span className="unit">°F</span>
+            </div>
           </div>
         </div>
         <div className="row mt-2 mb-2">
