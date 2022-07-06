@@ -8,9 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <body>
-      <App />
-    </body>
+    <App />
     <p class="source-code">
       <a href="https://github.com/bbeltran22/weather-react">Open Source Code</a>
       <br />
