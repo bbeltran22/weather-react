@@ -10,8 +10,7 @@ root.render(
   <React.StrictMode>
     <App />
     <p class="source-code">
-      <a href="https://github.com/bbeltran22/weather-react">Open Source Code</a>
-      <br />
+      <a href="https://github.com/bbeltran22/weather-react">Open Source Code</a>{" "}
       By Breanna Beltran
     </p>
   </React.StrictMode>

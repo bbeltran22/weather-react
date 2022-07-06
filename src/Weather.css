@@ -1,0 +1,15 @@
+h1 {
+  color: #50717b;
+}
+ul {
+  color: #3a4042;
+  list-style-type: none;
+}
+
+li {
+  font-size: large;
+}
+
+.Weather {
+  font-family: "Bebas Neue", cursive;
+}

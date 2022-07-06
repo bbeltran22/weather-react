@@ -1,9 +1,11 @@
+import React from "react";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
   return (
-    <div className="App container">
-      <div className="Main card mb-3"></div>
+    <div className="App container mt-2">
+      <Weather />
     </div>
   );
 }
