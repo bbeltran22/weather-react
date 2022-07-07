@@ -6,6 +6,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [data, setData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleReposonse(response) {
     setData({
       ready: true,
