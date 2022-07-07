@@ -13,7 +13,7 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      icon: response.data.weather[0].icon,
       highTemp: response.data.main.temp_max,
       lowTemp: response.data.main.temp_min,
       humidity: response.data.main.humidity,
@@ -40,7 +40,7 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9 mt-3">
+            <div className="col-6 mt-3 ">
               <input
                 type="search"
                 placeholder="Enter a city"
@@ -49,7 +49,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3 mt-3">
+            <div className="col-2 mt-3 ">
               <input
                 type="submit"
                 value="Search"
