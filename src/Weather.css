@@ -1,5 +1,6 @@
 h1 {
   color: #50717b;
+  font-size: 55px;
 }
 ul {
   color: #3a4042;
@@ -8,11 +9,7 @@ ul {
 }
 
 li {
-  font-size: large;
-}
-
-img {
-  height: 53px;
+  font-size: 14px;
 }
 
 .Weather {
@@ -20,13 +17,15 @@ img {
 }
 
 .temperature {
-  font-size: 51px;
-  line-height: 51px;
+  font-size: 48px;
   color: #50717b;
 }
 
 .unit {
   color: #50717b;
+  font-size: medium;
+  position: relative;
+  top: -23px;
 }
 
 .stat {
