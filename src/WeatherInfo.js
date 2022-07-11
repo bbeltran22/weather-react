@@ -1,13 +1,13 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
-import Conversion from "./Conversion";
+import Temp from "./Temp";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1 className="mt-2 mb-1">{props.info.city}</h1>
-      <div className="row mb-1">
+      <div className="row">
         <div className="col-9">
           <ul>
             <li>
@@ -23,7 +23,7 @@ export default function WeatherInfo(props) {
         </div>
         <div className="row">
           <div className="col-6">
-            <Conversion fahrenheit={props.info.temperature} />
+            <Temp fahrenheit={props.info.temperature} />
           </div>
         </div>
       </div>
