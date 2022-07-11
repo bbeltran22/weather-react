@@ -1,29 +1,20 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import Temp from "./Temp";
+import AirQuality from "./AirQuality";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1 className="mt-2 mb-1">{props.info.city}</h1>
-      <div className="row mb-1">
-        <div className="col-9">
-          <ul>
-            <li>
-              <FormattedDate date={props.info.date} />
-            </li>
-            <li>{props.info.description}</li>
-          </ul>
-        </div>
-        <div className="col-3">
-          <div className="icon clearfix">
-            <WeatherIcon code={props.info.icon} size={50} />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6"></div>
+      <h1 className="mt-3 mb-1 text-center">{props.info.city}</h1>
+      <div className="row mb-1 text-center">
+        <div className="temp col ">
           <Temp fahrenheit={props.info.temp} />
+        </div>
+        <div className="col ">
+          <span className="icon">
+            <WeatherIcon code={props.info.icon} />
+          </span>
         </div>
       </div>
       <div className="row mt-2 mb-2">
@@ -34,7 +25,9 @@ export default function WeatherInfo(props) {
           Low: {Math.round(props.info.lowTemp)}°F
         </div>
         <div className="stat col-3">Humidity: {props.info.humidity}%</div>
-        <div className="stat col-3 mb-2">Air Quality: Good</div>
+        <div className="stat col-3 mb-2">
+          <AirQuality />
+        </div>
       </div>
     </div>
   );
