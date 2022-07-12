@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <p class="source-code">
+    <p class="source-code mt-2">
       <a href="https://github.com/bbeltran22/weather-react">Open Source Code</a>{" "}
       By Breanna Beltran
     </p>

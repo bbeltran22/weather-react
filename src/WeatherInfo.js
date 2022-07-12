@@ -1,7 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import Temp from "./Temp";
-import AirQuality from "./AirQuality";
 
 export default function WeatherInfo(props) {
   return (
@@ -25,9 +24,7 @@ export default function WeatherInfo(props) {
           Low: {Math.round(props.info.lowTemp)}°F
         </div>
         <div className="stat col-3">Humidity: {props.info.humidity}%</div>
-        <div className="stat col-3 mb-2">
-          <AirQuality />
-        </div>
+        <div className="stat col-3 mb-2">Air Quality: ?</div>
       </div>
     </div>
   );
